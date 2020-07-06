@@ -1,1 +1,0 @@
-{"version":3,"file":"createPaystackProvider.js","sourceRoot":"","sources":["../../src/providers/createPaystackProvider.ts"],"names":[],"mappings":";;AAGA,4CAA6C;AAE7C,kCAA4C;AAE5C,SAAgB,sBAAsB,CAAC,OAAwB;IAC7D,OAAO;QACL,OAAO,EAAE,yBAAa;QACtB,QAAQ,EAAE,wBAAiB,CAAC,OAAO,CAAC;KACrC,CAAC;AACJ,CAAC;AALD,wDAKC"}
