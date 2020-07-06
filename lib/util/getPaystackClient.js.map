@@ -1,0 +1,1 @@
+{"version":3,"file":"getPaystackClient.js","sourceRoot":"","sources":["../../src/util/getPaystackClient.ts"],"names":[],"mappings":";;AAAA,qCAAqC;AAGrC,SAAgB,iBAAiB,CAAC,EAAE,MAAM,EAAmB;IAC3D,MAAM,cAAc,GAAG,IAAI,QAAQ,CAAC,MAAM,CAAC,CAAC;IAE5C,OAAO,cAAc,CAAC;AACxB,CAAC;AAJD,8CAIC"}

@@ -1,0 +1,63 @@
+{
+  "name": "nestjs-paystack",
+  "version": "1.0.0",
+  "description": "Provides an injectable paystack client for nestjs modules",
+  "author": {
+    "name": "Seyi Adeleke"
+  },
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "codecov": "codecov",
+    "format": "prettier --write '**/*.md' '**/*.json' '**/*.ts' '**/*.yml' .prettierrc",
+    "prebuild": "rimraf lib",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "test:cov": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^7.0.7",
+    "@nestjs/core": "^7.0.7",
+    "@nestjs/testing": "^7.0.7",
+    "@types/jest": "25.2.1",
+    "@types/node": "13.11.0",
+    "codecov": "3.6.5",
+    "jest": "25.2.7",
+    "paystack": "2.0.1",
+    "prettier": "2.0.2",
+    "rimraf": "3.0.2",
+    "ts-jest": "25.2.1",
+    "typescript": "3.8.3"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^6.0.0",
+    "@nestjs/core": "^6.0.0",
+    "paystack": "2.0.1"
+  },
+  "keywords": [
+    "nestjs",
+    "paystack",
+    "payments"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
