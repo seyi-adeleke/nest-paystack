@@ -1,4 +1,6 @@
 
+[![Coverage Status](https://coveralls.io/repos/github/seyi-adeleke/nest-paystack/badge.svg?branch=add-coveralls)](https://coveralls.io/github/seyi-adeleke/nest-paystack?branch=add-coveralls)
+
 ## Table Of Contents
 - [About](#about)
 - [Installation](#installation)

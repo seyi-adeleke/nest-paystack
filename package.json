@@ -11,14 +11,17 @@
   "files": [
     "lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seyi-adeleke/nest-paystack"
+   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "codecov": "codecov",
     "format": "prettier --write '**/*.md' '**/*.json' '**/*.ts' '**/*.yml' .prettierrc",
     "prebuild": "rimraf lib",
     "prepublish:npm": "npm run build",
     "publish:npm": "npm publish --access public",
-    "test:cov": "jest --coverage",
+    "coverage": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test:watch": "jest --watch",
     "test": "jest"
   },
@@ -29,13 +32,15 @@
     "@types/jest": "25.2.1",
     "@types/node": "13.11.0",
     "codecov": "3.6.5",
+    "coveralls": "3.1.0",
     "jest": "25.2.7",
     "paystack": "2.0.1",
     "prettier": "2.0.2",
+    "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",
+    "rxjs": "6.6.0",
     "ts-jest": "25.2.1",
-    "typescript": "3.8.3",
-    "rxjs": "6.6.0"
+    "typescript": "3.8.3"
   },
   "peerDependencies": {
     "@nestjs/common": "^6.0.0",
