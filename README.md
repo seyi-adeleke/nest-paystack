@@ -1,4 +1,6 @@
 
+[![Coverage Status](https://coveralls.io/repos/github/seyi-adeleke/nest-paystack/badge.svg?branch=add-coveralls)](https://coveralls.io/github/seyi-adeleke/nest-paystack?branch=add-coveralls)
+
 ## Table Of Contents
 - [About](#about)
 - [Installation](#installation)
@@ -25,7 +27,7 @@ import { PaystackModule } from 'nestjs-paystack';
 
 @Module({
   imports: [
-    Paystackmodule.forRoot({
+    PaystackModule.forRoot({
       apiKey: 'sk_xxxxxxxxx',
     }),
   ],
@@ -39,12 +41,11 @@ custom  `InjectPaystack` decorator
 ```typescript
 import { Injectable } from '@nestjs/common';
 import { InjectPaystack } from 'nestjs-paystack';
-import * as paystack from 'paystack';
 
 @Injectable()
 export class AppService {
   public constructor(
-  @InjectPaystack() private readonly paystackClient: paystack) {}
+  @InjectPaystack() private readonly paystackClient) {}
 }
 ```
 
@@ -98,7 +99,9 @@ import { PaystackConfigService } from './PaystackConfigService';
 export class PaystackConfigModule {}
 ```
 
-
+## Usage
+This module uses [paystack](https://github.com/kehers/paystack) and all methods defined in the documentation are available to the `paystackClient`.
+[Docs](https://github.com/kehers/paystack/blob/master/README.md)
 
 ## License
 
